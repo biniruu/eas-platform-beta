@@ -1,15 +1,9 @@
 ---
-import AstroPresentation from "../components/presentation/astro";
-import CodePresentation from "../components/presentation/code";
-import DevFreePresentation from "../components/presentation/developerFree";
 import FooterFreePresentation from "../components/presentation/footerFree";
-import FreeToProPresentation from "../components/presentation/freeToPro";
-import GithubPresentation from "../components/presentation/github";
+
 import HeaderPresentation from "../components/presentation/header";
 import LogosPresentation from "../components/presentation/logos";
-import PagesFreePresentation from "../components/presentation/pagesFree";
-import PalettePresentationFree from "../components/presentation/palette";
-import PricingPresentation from "../components/presentation/pricing";
+import { SimpleCardSectionThree } from "../components/presentation/pagesFree";
 import Layout from '../layouts/Layout.astro';
 
 ---
@@ -19,14 +13,17 @@ import Layout from '../layouts/Layout.astro';
     <HeaderPresentation client:only="react" />
     <!-- <FeaturePresentation client:only="react" /> -->
     <LogosPresentation client:only="react" heading="EAS PLATFORM 주요 고객" desc="EAS PLATFORM의 솔루션을 이용하는 고객을 확인해보세요." />
-    <DevFreePresentation client:only="react" />
-    <PalettePresentationFree client:only="react" />
-    <CodePresentation client:only="react" />
-    <FreeToProPresentation client:only="react" />
-    <AstroPresentation client:only="react" />
-    <PagesFreePresentation client:only="react" />
+    <!-- <DevFreePresentation client:only="react" /> -->
+    <!-- <PalettePresentationFree client:only="react" /> -->
+    <!-- <CodePresentation client:only="react" /> -->
+    <!-- <FreeToProPresentation client:only="react" /> -->
+    <!-- <AstroPresentation client:only="react" /> -->
+    <SimpleCardSectionThree client:only="react" heading="EAS PLATFORM 핵심역량 사례" subheading="A사, 온도 보존율 2배 이상" desc="이마트 냉동차의 온도 보존에 들어가는 비용을 절반 이상 절감" />
     <PricingPresentation client:only="react" />
     <GithubPresentation client:only="react" />
+    <SimpleCardSectionThree client:only="react" heading="EAS PLATFORM 핵심역량 사례" subheading="A사, 온도 보존율 2배 이상" desc="이마트 냉동차의 온도 보존에 들어가는 비용을 절반 이상 절감" />
+    <!-- <PricingPresentation client:only="react" />
+    <GithubPresentation client:only="react" /> -->
     <FooterFreePresentation client:only="react" />
   </main>
 </Layout>
