@@ -9,13 +9,19 @@ const logos = [
   "vodafone",
 ];
 
-export function LogoSectionOne() {
+export function LogoSectionOne({
+  heading,
+  desc,
+}: {
+  heading?: string;
+  desc?: string;
+}) {
   return (
     <section className="py-8 px-8 lg:py-20">
       <div className="container mx-auto text-center">
-        <Typography variant="h2">EAS PLATFORM 주요 고객</Typography>
+        {heading && <Typography variant="h2">{heading}</Typography>}
         <Typography color="blue-gray" className="text-xl font-extrabold mb-8">
-          EAS PLATFORM의 솔루션을 이용하는 고객을 확인해보세요.
+          {desc || "Trusted by the best companies"}
         </Typography>
         <div className="flex flex-wrap items-center justify-center gap-8">
           {logos.map((logo, key) => (
