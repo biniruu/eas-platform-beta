@@ -1,7 +1,6 @@
 import {
   Bars2Icon,
   ChevronDownIcon,
-  CodeBracketSquareIcon,
   Cog6ToothIcon,
   InboxArrowDownIcon,
   LifebuoyIcon,
@@ -268,8 +267,12 @@ function NavListMenu() {
 // nav list component
 const navListItems = [
   {
-    label: "Docs",
-    icon: CodeBracketSquareIcon,
+    label: "회사 소개",
+    href: "/astro-launch-ui/about",
+  },
+  {
+    label: "오시는 길",
+    href: "/astro-launch-ui/contact-us",
   },
 ];
 
@@ -279,17 +282,16 @@ function NavList() {
       {/* <NavListMenu /> */}
       {/* <AccountListMenu /> */}
 
-      {navListItems.map(({ label, icon }, key) => (
+      {navListItems.map(({ label, href }) => (
         <Typography
           key={label}
           as="a"
-          href="https://www.creative-tim.com/learning-lab/astro/quick-start/astro-launch-ui/"
+          href={href}
           variant="small"
           color="blue-gray"
           className="font-normal"
         >
           <MenuItem className="flex items-center gap-2 lg:rounded-full">
-            {React.createElement(icon, { className: "h-[18px] w-[18px]" })}{" "}
             {label}
           </MenuItem>
         </Typography>
