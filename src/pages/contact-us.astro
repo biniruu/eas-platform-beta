@@ -1,20 +1,20 @@
 ---
+import FeaturesAbout from "../components/about/features";
+import FooterAbout from "../components/about/footer";
+import HeaderAbout from "../components/about/header";
+import TestimonialAbout from "../components/about/testimonials";
 import Layout from '../layouts/Layout.astro';
-import data from "../../public/data.json";
-import HeaderAbout from "../components/about/header"
-import FeaturesAbout from "../components/about/features"
-import TeamAbout from "../components/about/team"
-import TestimonialAbout from "../components/about/testimonials"
-import FooterAbout from "../components/about/footer"
 ---
 
 
 <Layout title="About Us Page">
 	<main>
     <HeaderAbout client:only="react" />
+    <p>주소: 경기도 안성시 독정길 3-9</p>
+    <p>전화번호: 070-4571-4880</p>
+    <p>운영시간: 평일 9:00am ~ 18:00pm</p>
     <FeaturesAbout client:only="react" />
     <TestimonialAbout client:only="react" />
-    <TeamAbout client:only="react" />
     <FooterAbout client:only="react" />
   </main>
 </Layout>
