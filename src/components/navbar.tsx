@@ -270,10 +270,10 @@ const navListItems = [
     label: "회사 소개",
     href: "/astro-launch-ui/about",
   },
-  {
-    label: "오시는 길",
-    href: "/astro-launch-ui/contact-us",
-  },
+  // {
+  //   label: "오시는 길",
+  //   href: "/astro-launch-ui/contact-us",
+  // },
 ];
 
 function NavList() {
