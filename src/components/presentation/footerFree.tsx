@@ -2,29 +2,6 @@ import { Typography } from "@material-tailwind/react";
 
 const YEAR = new Date().getFullYear();
 
-const SOCIAL_MEDIA = [
-  {
-    icon: "fab fa-twitter",
-    link: "https://www.twitter.com/creativetim?ref=astrolaunch-ui",
-  },
-  {
-    icon: "fab fa-facebook-square",
-    link: "https://www.facebook.com/creativetim?ref=astrolaunch-ui",
-  },
-  {
-    icon: "fab fa-dribbble",
-    link: "https://www.dribbble.com/creativetim?ref=astrolaunch-ui",
-  },
-  {
-    icon: "fab fa-github",
-    link: "https://www.github.com/creativetimofficial?ref=astrolaunch-ui",
-  },
-  {
-    icon: "fab fa-discord",
-    link: "https://discord.com/invite/gxtg2rJa?ref=astrolaunch-ui",
-  },
-];
-
 const COMPANY = [
   {
     name: "About Us",
@@ -103,99 +80,23 @@ export function Footer() {
               variant="h4"
               className="mb-2 !font-semibold !text-primary"
             >
-              AstroLaunch UI
+              EAS PLATFORM
             </Typography>
-            <Typography className="text-md mt-0 mb-2 font-normal !text-gray-600">
-              Easy to use for Tailwind CSS and Material Design.
-            </Typography>
-            <div className="mt-6">
-              {SOCIAL_MEDIA.map(({ icon, link }, key) => (
-                <a key={key} href={link} target="_blank" rel="noreferrer">
-                  <i
-                    className={`${icon} font-xl align-center mr-2 inline-block items-center justify-center rounded-full border-[1.5px] border-blue-gray-50 p-3 text-center text-primary outline-none focus:outline-none`}
-                  />
-                </a>
-              ))}
-            </div>
           </div>
-          <div className="ml-auto w-full px-4 md:w-7/12">
-            <div className="items-top mb-6 flex flex-wrap">
-              <div className="w-6/12 pt-6 md:ml-auto md:px-4 md:pt-0 xl:w-3/12">
-                <span className="text-md mb-4 block font-medium text-primary">
-                  Company
-                </span>
-                <ul className="list-unstyled">
-                  {COMPANY.map(({ name, link }, key) => (
-                    <li key={key}>
-                      <a
-                        href={link}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="block pb-2 text-sm font-normal leading-relaxed text-gray-600 transition-colors hover:text-primary"
-                      >
-                        {name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="ml-auto w-6/12 pt-6 md:px-4 md:pt-0 xl:w-3/12">
-                <span className="text-md mb-4 block font-medium text-primary">
-                  Help and Support
-                </span>
-                <ul className="list-unstyled">
-                  {HELP.map(({ name, link }, key) => (
-                    <li key={key}>
-                      <a
-                        href={link}
-                        rel="noreferrer"
-                        target={name === "Pricing" ? "_self" : "_blank"}
-                        className="block pb-2 text-sm font-normal leading-relaxed text-gray-600 transition-colors hover:text-primary"
-                      >
-                        {name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="ml-auto w-6/12 pt-6 md:px-4 md:pt-0 xl:w-3/12">
-                <span className="text-md mb-4 block font-medium text-primary">
-                  Resources
-                </span>
-                <ul className="list-unstyled">
-                  {RESOURCES.map(({ name, link }, key) => (
-                    <li key={key}>
-                      <a
-                        href={link}
-                        rel="noreferrer"
-                        target={name === "Documentation" ? "_self" : "_blank"}
-                        className="block pb-2 text-sm font-normal leading-relaxed text-gray-600 transition-colors hover:text-primary"
-                      >
-                        {name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="ml-auto w-6/12 pt-6 md:px-4 md:pt-0 xl:w-3/12">
-                <span className="text-md mb-4 block font-medium text-primary">
-                  Tehnologies
-                </span>
-                <ul className="list-unstyled">
-                  {TECHS.map(({ name, link }, key) => (
-                    <li key={key}>
-                      <a
-                        href={link}
-                        className="block pb-2 text-sm font-normal leading-relaxed text-gray-600 transition-colors hover:text-primary"
-                      >
-                        {name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
+          <address className="ml-auto w-full md:px-4 md:w-7/12 not-italic">
+            <dl className="mb-4">
+              <dt className="font-bold">주소:</dt>
+              <dd>경기도 안성시 독정길 3-9</dd>
+            </dl>
+            <dl className="mb-4">
+              <dt className="font-bold">전화번호:</dt>
+              <dd>070-4571-4880</dd>
+            </dl>
+            <dl className="mb-4">
+              <dt className="font-bold">운영시간:</dt>
+              <dd>평일 9:00am ~ 18:00pm</dd>
+            </dl>
+          </address>
         </div>
         <hr className="my-6 border-blue-gray-50" />
         <div className="flex flex-wrap items-center justify-center gap-2 md:justify-between">
