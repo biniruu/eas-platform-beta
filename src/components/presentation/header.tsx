@@ -7,7 +7,7 @@ export function HeroPresentation() {
     <ThemeProvider>
       <Navbar />
       <header className="h-full w-screen place-items-center bg-white relative px-8 py-8 lg:mb-36  md:mt-16">
-        <div className="container mx-auto grid items-center lg:grid-cols-2">
+        <div className="container mx-auto grid items-center lg:grid-cols-2 z-[1]">
           <div className="text-center lg:text-left pt-20 pb-12">
             <Typography
               variant="h1"
@@ -22,15 +22,20 @@ export function HeroPresentation() {
               바로 시작하세요!
             </Typography>
             <div className="mt-12 flex flex-wrap justify-center gap-3 lg:justify-start">
-              <a href="#pricing">
-                <Button color="dark" className="flex items-center">
-                  Get Started
-                </Button>
-              </a>
+              <div className="relative z-[2]">
+                <a href="/about">
+                  <Button color="dark" className="flex items-center">
+                    회사 소개
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div className="hidden lg:flex absolute inset-0 justify-end items-center">
+        <div
+          className="hidden lg:flex absolute inset-0 justify-end items-center"
+          style={{ zIndex: 0 }}
+        >
           <img
             src="hero.jpg"
             alt="components"
