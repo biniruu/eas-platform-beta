@@ -1,4 +1,3 @@
-
 import { Typography } from "@material-tailwind/react";
 
 const YEAR = new Date().getFullYear();
@@ -201,20 +200,10 @@ export function Footer() {
         <hr className="my-6 border-blue-gray-50" />
         <div className="flex flex-wrap items-center justify-center gap-2 md:justify-between">
           <div className="text-center lg:text-left">
-           
             <div className="text-md mt-2 py-1 font-normal text-gray-600">
               Copyright &copy; {YEAR}{" "}
               <a href="/" className="text-inherit transition-all">
-                AstroLaunch UI
-              </a>{" "}
-              by{" "}
-              <a
-                href="https://www.creative-tim.com?ref=astroLaunch-ui"
-                target="_blank"
-                rel="noreferrer"
-                className="text-inherit transition-all"
-              >
-                Creative Tim. Made with ❤️ for a better web.
+                EAS PLATFORM
               </a>
             </div>
           </div>
