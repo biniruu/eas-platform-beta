@@ -1,0 +1,62 @@
+import { Typography } from "@material-tailwind/react";
+
+export function AboutIntro() {
+  return (
+    <div className="h-full w-screen place-items-center bg-white px-8 py-28">
+      <div className="container">
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1650615567023-0721bceeecb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
+            alt="iphone"
+            className="max-w-md rounded-3xl m-auto"
+          />
+        </div>
+        <div className="pt-32">
+          <Typography
+            variant="h1"
+            color="blue-gray"
+            className="mb-8 leading-tight lg:text-6xl"
+          >
+            EAS Platform을 소개합니다.
+          </Typography>
+          <Typography variant="lead" className="lg:pr-20 text-blue-gray-800">
+            <p className="mb-4">
+              EAS PLATFORM(이하 EAS)은 HIAB 그룹의 ZEPRO 한국총판으로
+              테일리프트(Tail-lift), 냉동탑 등의 물류 운송장비 및 자동화설비
+              솔루션을 제공하는 기업입니다. 2021년 설립 이후, 고품질 장비를 B2B
+              중심으로 공급해왔으며, 제품 설계부터 생산, A/S까지 원스톱 솔루션을
+              제공합니다.
+            </p>
+            <p className="mb-4">
+              현재 안성 COMPLEX 센터를 중심으로 반자동화 생산 프로세스와
+              표준모듈화, 'FLOW 시스템'을 통해 제품 고도화 및 고객 맞춤형 제품을
+              빠르고 효율적으로 공급하고 있으며, 전국 센터를 통한 신속한 A/S 도
+              지원합니다.
+            </p>
+            <p className="mb-4">
+              EAS 는 R&D 에 핵심 역량을 쏟는 기업입니다. 2024 년 11 월, 모듈
+              설계를 바탕으로 하는 유럽형 냉동탑 CX 6200 을 국내에서 처음
+              출시했습니다, 2025 년 1 월에는 글로벌 기업인 3M KOREA 와 MOU 를
+              체결, 상용차에 고품질 접착 실링 솔루션을 적용하는 프로젝트를
+              수행해 기밀성 향상이라는 성과를 이뤄냈습니다.
+            </p>
+            <p className="mb-4">
+              EAS 의 핵심 철학은 고객과 생산자가 '가치'를 함께 나눌 수 있는
+              "적정 솔루션" 제공입니다. 제품 고도화와 생산프로세서의 효율화를
+              통해 구성원들이 함께 가치를 창출할 수 있는 물류 생태계를
+              지향합니다.
+            </p>
+            <p className="mb-4">
+              현재 IoT 기반 자동화 기술과 글로벌 파트너십을 통해 아시아 수출 및
+              스마트 물류 구축을 목표로 사업을 확장 중이며, 앞으로도 미래형
+              물류산업을 선도하는 혁신 파트너로서, 신뢰받는 기술과 서비스를 통해
+              지속 가능한 성장을 이어가겠습니다.
+            </p>
+          </Typography>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default AboutIntro;
