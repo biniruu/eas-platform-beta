@@ -6,24 +6,9 @@ export function HeroPresentation() {
   return (
     <ThemeProvider>
       <Navbar />
-      <header className="h-full w-screen place-items-center bg-white relative px-8 py-8 lg:mb-36">
+      <header className="h-full w-screen place-items-center bg-white relative px-8 py-8 lg:mb-36  md:mt-16">
         <div className="container mx-auto grid items-center lg:grid-cols-2">
-          <div className="text-center lg:text-left pt-32">
-            {/* <div className="mb-8 inline-flex items-center">
-              <Typography
-                variant="small"
-                className="mr-3 py-0.5 px-3 font-bold text-dark uppercase border-r border-dark"
-              >
-                New
-              </Typography>
-              <Typography
-                color="dark"
-                variant="small"
-                className="flex items-center font-bold uppercase"
-              >
-                Astro Starter Template
-              </Typography>
-            </div> */}
+          <div className="text-center lg:text-left pt-20 pb-12">
             <Typography
               variant="h1"
               color="blue-gray"
@@ -45,11 +30,12 @@ export function HeroPresentation() {
             </div>
           </div>
         </div>
-        <div className="hidden lg:flex">
+        <div className="hidden lg:flex absolute inset-0 justify-end items-center">
           <img
-            src="header.png"
+            src="hero.jpg"
             alt="components"
-            className="absolute -top-10 right-0 w-1/2"
+            className="w-full h-full object-cover"
+            style={{ maxWidth: "50%" }}
           />
         </div>
       </header>
