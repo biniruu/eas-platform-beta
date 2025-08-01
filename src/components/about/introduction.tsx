@@ -4,13 +4,14 @@ export function AboutIntro() {
   return (
     <div className="h-full w-screen place-items-center bg-white px-8 py-28">
       <div className="container">
-        <div>
+        {/* This image section will be changed */}
+        {/* <div>
           <img
             src="https://images.unsplash.com/photo-1650615567023-0721bceeecb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"
             alt="iphone"
             className="max-w-md rounded-3xl m-auto"
           />
-        </div>
+        </div> */}
         <div className="pt-32">
           <Typography
             variant="h1"
