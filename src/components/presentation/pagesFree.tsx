@@ -66,7 +66,7 @@ function SimpleCard({ img, title, desc }: BlogPostCardPropsType) {
     <Card color="transparent" shadow={false} className="text-center">
       <CardHeader
         floated={false}
-        className="mx-0 mt-0 mb-8 h-full min-h-[14rem] flex items-center justify-center"
+        className="mx-0 mt-0 mb-8 h-full min-h-[14rem] flex items-center justify-center shadow-none"
       >
         <img
           src={img}
