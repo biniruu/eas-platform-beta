@@ -9,6 +9,8 @@ const logos = [
   "vodafone",
 ];
 
+const numOfImages = Array.from({ length: 9 }, (_, i) => i + 1);
+
 export function LogoSectionOne({
   heading,
   desc,
@@ -24,11 +26,11 @@ export function LogoSectionOne({
           {desc || "Trusted by the best companies"}
         </Typography>
         <div className="flex flex-wrap items-center justify-center gap-8">
-          {logos.map((logo, key) => (
+          {numOfImages.map((num, key) => (
             <img
               key={key}
-              src={`logos/logo-${logo}.svg`}
-              alt="logo"
+              src={`clients/image-${num}.png`}
+              alt={`client-${num}`}
               className="w-40"
             />
           ))}
