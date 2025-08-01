@@ -1,0 +1,1 @@
+import{j as r}from"./index.DH6Sb13u.js";import{C as o}from"./navbar.BkXzRjdM.js";import{T as e}from"./theme-provider.Bb1Gu1_d.js";import"./index.BiPjaInd.js";function a(){return r.jsx(e,{children:r.jsx(o,{})})}export{a as default};
