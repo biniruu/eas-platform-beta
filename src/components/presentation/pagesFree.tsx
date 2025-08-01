@@ -64,8 +64,15 @@ function BlogPostCard({ img, title, desc, url }: BlogPostCardPropsType) {
 function SimpleCard({ img, title, desc }: BlogPostCardPropsType) {
   return (
     <Card color="transparent" shadow={false} className="text-center">
-      <CardHeader floated={false} className="mx-0 mt-0 mb-8 h-56">
-        <img src={img} alt={title} className="h-full w-full object-cover" />
+      <CardHeader
+        floated={false}
+        className="mx-0 mt-0 mb-8 h-full min-h-[14rem] flex items-center justify-center"
+      >
+        <img
+          src={img}
+          alt={title}
+          className="h-[14rem] w-full object-contain"
+        />
       </CardHeader>
       <CardBody className="p-0">
         <div className="col-span-5">
@@ -150,17 +157,17 @@ export function BlogSectionThree({
 
 const simpleCards = [
   {
-    img: "aboutus.jpg",
+    img: "img_hpp.png",
     title: "HPP (고압발포패널) + PCM",
     desc: "고밀도 구조, 온도보존효과 높음",
   },
   {
-    img: "signin.jpg",
+    img: "img_posmac.png",
     title: "하부 프레임 포스맥 적용",
     desc: "구조물 내식성 높음",
   },
   {
-    img: "404.jpg",
+    img: "img_trr.png",
     title: "재활용 타이어 고무 하부코팅",
     desc: "하부 프레임 부식 방지",
   },
