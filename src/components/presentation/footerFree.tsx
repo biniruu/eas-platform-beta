@@ -74,7 +74,8 @@ export function Footer() {
   return (
     <footer className="relative z-50 bg-white px-8 pt-12 pb-6">
       <div className="container mx-auto">
-        <div className="flex flex-wrap">
+        <hr className="my-6 border-blue-gray-50" />
+        <div className="flex flex-wrap px-1">
           <div className="w-full md:w-4/12">
             <Typography
               variant="h4"
@@ -99,7 +100,7 @@ export function Footer() {
           </address>
         </div>
         <hr className="my-6 border-blue-gray-50" />
-        <div className="flex flex-wrap items-center justify-center gap-2 md:justify-between">
+        <div className="flex flex-wrap items-center justify-center gap-2 md:justify-between lg:px-2">
           <div className="text-center lg:text-left">
             <div className="text-md mt-2 py-1 font-normal text-gray-600">
               Copyright &copy; {YEAR}{" "}
