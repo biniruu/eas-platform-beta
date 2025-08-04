@@ -1,6 +1,7 @@
 ---
 import HeaderAbout from "../components/about/header";
 import AboutIntro from "../components/about/introduction";
+import FooterFreePresentation from "../components/presentation/footerFree";
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -9,5 +10,6 @@ import Layout from '../layouts/Layout.astro';
 	<main>
     <HeaderAbout client:only="react" />
     <AboutIntro client:only="react" />
+    <FooterFreePresentation client:only="react" />
   </main>
 </Layout>
