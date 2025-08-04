@@ -18,7 +18,7 @@ export function AboutIntro() {
             color="blue-gray"
             className="mb-8 leading-tight lg:text-6xl"
           >
-            EAS Platform을 소개합니다.
+            EAS PLATFORM을 소개합니다.
           </Typography>
           <Typography variant="lead" className="lg:pr-20 text-blue-gray-800">
             <p className="mb-4">
