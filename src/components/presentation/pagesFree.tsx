@@ -173,6 +173,31 @@ const simpleCards = [
   },
 ];
 
+const content = [
+  {
+    title: "HPP (고압발포패널) + PCM",
+    desc: "고밀도 구조, 온도보존효과 높음",
+  },
+  {
+    title: "하부 프레임 포스맥 적용",
+    desc: "구조물 내식성 높음",
+  },
+  {
+    title: "재활용 타이어 고무 하부코팅",
+    desc: "하부 프레임 부식 방지",
+  },
+];
+
+const img = [
+  { src: "img_hpp.png", alt: "HPP (고압발포패널) + PCM" },
+  { src: "img_posmac.png", alt: "하부 프레임 포스맥 적용" },
+  { src: "img_trr.png", alt: "재활용 타이어 고무 하부코팅" },
+  { src: "img_dpc.png", alt: "프레임 이중 파우더 코팅" },
+  { src: "img_innerfix.png", alt: "패널내부 밀착 고정" },
+  { src: "img_module.png", alt: "모듈 어셈블리" },
+  { src: "img_sealing.png", alt: "찬장, 내부 밀폐실링" },
+];
+
 export function SimpleCardSectionThree({
   subheading,
   heading,
@@ -199,25 +224,63 @@ export function SimpleCardSectionThree({
             </Typography>
           </div>
 
-          <div className="grid grid-cols-1 items-start gap-y-16 gap-x-8 md:grid-cols-2 lg:grid-cols-3">
-            {simpleCards.map(
+          {/* <div className="grid grid-cols-1 items-start gap-y-16 gap-x-8 md:grid-cols-2 lg:grid-cols-3"> */}
+          {/* {simpleCards.map(
               ({ img, author, date, title, desc, url, tags }: any) => (
                 <SimpleCard
                   key={title}
                   img={img}
-                  author={author}
-                  date={date}
+                  author={author || ""}
+                  date={date || ""}
                   title={title}
                   desc={desc}
-                  tags={tags}
-                  url={url}
+                  tags={tags || ""}
+                  url={url || ""}
                 />
               )
-            )}
-          </div>
+            )} */}
+          <ComplexSection content={content} img={img} />
+          {/* </div> */}
         </div>
       </section>
     </ThemeProvider>
+  );
+}
+function ComplexSection({
+  content,
+  img,
+}: {
+  content: { title: string; desc: string }[];
+  img: { src: string; alt: string }[];
+}) {
+  return (
+    <>
+      <div className="grid grid-cols-1 items-start gap-y-4 md:gap-y-16 gap-x-8 md:grid-cols-7">
+        <div className="col-span-1 md:col-span-2 md:col-end-3">
+          {content.map(({ title, desc }: any) => (
+            <dl
+              key={title}
+              className="py-8 text-center md:text-left border-b-0 md:border-b-black/20 last:border-b-0 md:border-b"
+            >
+              <dt className="mb-2 font-bold text-blue-gray-900">{title}</dt>
+              <dd className="font-normal text-blue-gray-700">{desc}</dd>
+            </dl>
+          ))}
+        </div>
+        <div className="col-span-1 md:col-span-5 md:col-end-8">
+          <div className="flex md:flex-wrap overflow-x-auto md:overflow-x-visible whitespace-nowrap -translate-x-2 md:translate-x-0">
+            {img.map(({ src, alt }: any) => (
+              <img
+                key={alt}
+                src={src}
+                alt={alt}
+                className="w-24 md:w-32 m-2 md:m-4 inline-block"
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
